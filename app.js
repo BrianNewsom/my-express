@@ -15,6 +15,12 @@ app.set('view engine', 'jade');
 // set where the static contents are (e.g., css, js)
 app.use(express.static(__dirname + '/public'));
 
+app.get('/',function(req,res){
+    res.render('home.jade',{
+
+    });
+})
+
 
 require('./mongo/listRepos')(app)
 require('./mongo/repoView')(app)

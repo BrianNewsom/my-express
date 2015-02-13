@@ -11,11 +11,14 @@ html(lang='en')
 
   body
 
-    div.container
-        h1 Yelp
-        include navbar
+    div.row
+        h1 GitHub API Explorer
+        hr
 
-    div#content
-      div.container
-        block content
+    div.row
+        div.one.columns
+            include navbar
+        
+        div.eleven.columns
+            block content
 
