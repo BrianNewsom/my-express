@@ -2,6 +2,7 @@ extends layout
 
 block content
     h1= repo.name
-    h2= repo.owner.login
+    h5= 'By: ' + repo.owner.login
+    p= repo.description
 
 end block

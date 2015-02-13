@@ -1,0 +1,7 @@
+extends layout.jade
+
+block content
+    h1 Course Pull Requests
+    each item in pulls
+        h5
+            a(href='/view/pull/' + item.id)= item.title

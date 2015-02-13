@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    div.row
+        div.six.columns
+            h1= pull.title
+
+        div.three.columns
+        div.three.columns
+            h5= pull.base.repo.name
+    div.row
+        h5= 'By: ' + pull.user.login
+
+    div.row
+        p= pull.body
+
+end block

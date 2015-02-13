@@ -9,7 +9,6 @@ module.exports = function(app) {
         repos.find({}, {
             limit: 20
         }, function(err, repos) {
-            console.log(repos);
 
             res.render('listRepos.jade', {
                 repos: repos
